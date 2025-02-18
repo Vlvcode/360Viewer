@@ -1,0 +1,77 @@
+.btn {
+    border-radius: 50px;
+    display: inline-flex;
+    border: none;
+    outline: 2px solid rgba(255, 255, 255, 0);
+    outline-offset: -2px;
+    height: 60px;
+    padding: 8px 30px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    background-color:#333333;
+    cursor: pointer;
+    align-items: center;
+    /* Это */
+    vertical-align: middle; 
+    /*  */
+    color: white;
+    font-weight: 100;
+    font-size: 20pt;
+    transition: all 0.2s;
+}
+
+.btn span{
+    position:static;
+    font-size: 25pt;
+    top: -20px;
+    left: 0px;
+    transition: all 0.2s;
+    opacity: 0.7;
+    margin-top: 1px;
+}
+/* Это */
+.btn i{
+    position:static;
+    font-size: 25pt;
+    top: -20px;
+    left: 0px;
+    transition: all 0.2s;
+    opacity: 0.7;
+    margin-top: 1px;
+    margin-right: 10px;
+}
+
+.btn h2{
+    font-size: 25pt;
+    width: 100%;
+    top: 20px;
+    left: 0px;
+    transition: all 0.2s;
+    opacity: 0.7;
+}
+/* */
+
+.btn:hover {
+    outline: 2px solid white;
+    outline-offset: -2px;
+    background-color: #424242
+}
+
+.btn.active {
+    background-color: #e0ff00;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    color: black;
+    cursor: default;
+}
+
+.btn.info {
+    background-color: transparent;
+    pointer-events: none;
+    cursor: default;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.show {
+    display: grid;
+}

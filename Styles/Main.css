@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Aeroport", sans-serif;
+    /* border: 1px solid red; */
+}
+
+@font-face {
+    font-family: "Aeroport";
+    src: url("Fonts/aeroport/");
+  }
+
+body{
+    overflow-y: scroll;
+    margin-top: 25px;
+    background-color: black;
+    min-height: 900px;
+}
+
+ul {
+    list-style-type: none;
+    }
+
+.back_logo{
+    z-index: -1;
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    background-image: url(Img/back_logo.svg);
+    background-size: cover 150px;
+    background-repeat: no-repeat;
+    position: fixed;
+    transition: all 5s;
+    /* border: 1px solid red; */
+}
+
+.MainCanvas {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+header{
+    margin-bottom: 70px;
+}
+
+footer{
+    height: 150px;
+    width: 100%;
+    margin-top: 30px;
+    background-image: url(Img/lines_pattern.svg);
+    background-size: 50%;
+    display: flex; /* Использование flexbox для выравнивания по центру */
+    justify-content: center; /* Выравнивание потомков по горизонтали */
+    align-items: center;
+}
+
+footer ul{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    text-align: center;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+.link{
+    text-decoration: underline;
+    font-weight: 100;
+    font-style: italic;
+    text-underline-offset: 5px;
+    text-decoration-color: white !important;
+    text-decoration-thickness: 1px;
+}
+
+.linkunderline{
+    text-decoration: underline; 
+    text-underline-offset: 10px;
+    text-decoration-color: #e0ff00;
+    text-decoration-thickness: 2px;
+}
+
+.linkunderline.disable{
+    text-decoration: none;
+    opacity: 0.5;
+    pointer-events: none;
+    font-style: italic
+}
+
+.linkunderline :hover{
+    color: #e0ff00;
+    margin-top: 3px;
+    text-decoration-color: #e0ff00;
+}
+
+h1{
+    font-size: 110pt;
+    color: white;
+    font-weight: 600;
+    line-height: 1;
+}
+
+h2{
+    font-size: 20pt;
+    color: white;
+    font-weight: 100;
+    line-height: 1;
+}
+
+p{
+    color: white;
+    font-size: 20pt;
+    font-weight: 100;
+}
+
+.sections{
+    text-align: right;
+    vertical-align: top;
+    padding-top: 30px;
+}
+
+.sections li{
+    margin-left: 50px;
+}
+
+@font-face {
+    font-family: 'Material Symbols Outlined';
+    font-style: normal;
+    font-weight: 100 700;
+    src: url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v164/kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsI.woff2) format('woff2');
+  }
+  
+  .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    
+    font-weight: normal;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    position: absolute;
+    margin-left: -10px;
+    margin-top: -10px;
+    direction: ltr;
+  }
+
+.icon {
+    width: 20px;
+    height: 20px;
+    text-align: left;
+    vertical-align: middle;
+    /* border: 1px solid red; */
+    margin-right: 20px;
+}
+
+.icon.mono{
+    margin-right: 0;
+}
+
+.imgoverlay{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.685);
+    background-size: cover;
+    z-index: 999;
+    text-align: center;
+}

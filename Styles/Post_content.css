@@ -1,0 +1,50 @@
+.PostContent{
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+
+.PostContent p{
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.PostContent h2{
+    font-size: 40pt;
+    color: white;
+    font-weight: 500;
+    line-height: 1;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.PostContent img{
+    max-width: 100%;
+    margin-bottom: 50px;
+}
+
+/* Цитата */
+.CIT{
+    font-style: italic;
+    margin-bottom: 150px;
+    margin-top: 70px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* Выделение */
+strong{
+    color: #e0ff00;
+}
+
+a{
+    text-decoration: underline;
+    text-decoration-color: white;
+    color: white;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 1px;
+}
+
+a:hover{
+    text-decoration-thickness: 2px;
+}
