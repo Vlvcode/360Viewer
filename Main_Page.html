@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Власов Даниил</title>
+    <link rel="icon" href="Styles/Img/web_icon.png">
+
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="Styles/Main.css">
+    <link rel="stylesheet" href="Styles/Buttons.css">
+    <link rel="stylesheet" href="Styles/Content_tile.css">
+
+</head>
+<body>
+
+<!-- Фоновое лого -->
+<div class="back_logo"></div>
+
+<div class="MainCanvas">
+    <header>
+        <table cellpadding="0" cellspacing="0" width="100%">
+            <td width="50%"><h1>Власов<br>Даниил</h1></td>
+            <td width="50%" class="sections"><ul style="display: inline-flex;">
+                <li><a href="" class="linkunderline disable"><h2>Работы</h2></a></li>
+                <li><a href="Notes_page.html" class="linkunderline"><h2>Заметки</h2></a></li>
+                <li><a href="Contact.html" class="linkunderline"><h2>Написать мне</h2></a></li>
+            </ul></td>
+        </table>
+    </header>
+<!-- Это -->
+<!-- Кнопки сюда -->
+<div id="myBtnContainer" style="margin-bottom: 20px;">
+    <button class="btn" style="border: 2px solid #e0ff00;"><i class="material-symbols-outlined" style="margin-right: -10px;">search</i></button>
+    <button class="btn filter active" style="border: 2px solid #e0ff00;" onclick="filterSelection('all')"><i class="material-symbols-outlined">select_all</i> Всё сразу</button>
+    <button class="btn filter" onclick="filterSelection('design')"> Дизайн</button>
+    <button class="btn filter" onclick="filterSelection('3d')"> 3д графика</button>
+    <button class="btn filter" onclick="filterSelection('logo')"> Логотипы</button>
+    <button class="btn filter" onclick="filterSelection('product')"> Продукт-дизайн</button>
+    <button class="btn filter" onclick="filterSelection('web')"> Веб</button>
+    <button class="btn filter" onclick="filterSelection('architecture')"> Архитектура</button>
+    <button class="btn filter" onclick="filterSelection('level design')"> Левел-дизайн</button>
+  </div>
+<!--  -->
+<!-- Контент сюда -->
+<div class="contentposts" id="contentposts">
+    <!-- Это -->
+    <div class="filterDiv 3d design" style="background-image: linear-gradient(to bottom, transparent 70%, rgba(0, 0, 0, 0.5)), 
+        url(Styles/Img/2.jpg);"><a href="Post_Page.html">
+        <div class="Content_tile"><h2>Коворкинг зона для школ Петербурга</h2></div>
+        </a></div>
+    
+    <div class="filterDiv design architecture" style="background-image: linear-gradient(to bottom, transparent 70%, rgba(0, 0, 0, 0.5)), 
+        url(Styles/Img/generated_image1.png);"><a href="Post_Page.html">
+        <div class="Content_tile">
+        <i class="material-symbols-outlined" style="color: white;">sticky_note_2</i>
+            <h2>Кто дакой дизайнер?</h2></div>
+        </a></div>
+    
+    <div class="filterDiv logo design" style="background-image: linear-gradient(to bottom, transparent 70%, rgba(0, 0, 0, 0.5)), 
+        url(Styles/Img/4.png);"><a href="Post_Page.html">
+        <div class="Content_tile"><h2>Колонка Dribble</h2></div>
+    </a></div>
+
+    <div class="filterDiv web logo" style="background-image: linear-gradient(to bottom, transparent 70%, rgba(0, 0, 0, 0.5)), 
+        url(Styles/Img/5.jpg);"><a href="Post_Page.html">
+        <div class="Content_tile"><h2>Логотип компании Spark Clean</h2></div>
+        </a></div>
+    
+    <div class="filterDiv design architecture logo" style="background-image: linear-gradient(to bottom, transparent 70%, rgba(0, 0, 0, 0.5)), 
+        url(Styles/Img/generated_image.png);"><a href="Post_Page.html">
+        <div class="Content_tile">
+            <i class="material-symbols-outlined" style="color: white;">sticky_note_2</i>
+            <h2>Часы «Орбита»</h2></div>
+        </a></div>
+    <!--  -->
+</div>
+
+</div>
+
+<!-- Динозаврик -->
+<iframe src="https://offline-dino-game.firebaseapp.com/" frameborder="0" scrolling="no" width="100%" height="100%" loading="lazy"></iframe>
+<style type="text/css">iframe { position: absolute;  width: 500px; height: 150px; z-index: 999; }</style>
+
+
+<a href="https://www.tema.ru/main.html" style="position: absolute; right: 10px; top: 10px; color: white; opacity: 0.1;">A</a>
+<!-- контент футера -->
+<footer>
+<ul>
+    <li><p>© 2024г. Власов Даниил</p></li>
+    <li><a href="https://vk.com/vlv_daniil" class="link"><p>vk.com/vlv_daniil</p></a></li>
+</ul>
+</footer>
+
+
+<!-- Скрипты -->
+<script src="Scripts/filter_selection.js"></script>
+<script src="Scripts/back_logo_animation.js"></script>
+</body>
+</html>

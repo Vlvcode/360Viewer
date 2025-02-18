@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Власов Даниил</title>
+    <link rel="icon" href="Styles/Img/web_icon.png">
+
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="Styles/Main.css">
+    <link rel="stylesheet" href="Styles/Buttons.css">
+    <link rel="stylesheet" href="Styles/Note_tile.css">
+
+</head>
+<body>
+
+<!-- Фоновое лого -->
+<div class="back_logo"></div>
+
+<div class="MainCanvas">
+    <header>
+        <table cellpadding="0" cellspacing="0" width="100%">
+            <td width="50%"><h1>Власов<br>Даниил</h1></td>
+            <td width="50%" class="sections"><ul style="display: inline-flex;">
+                <li><a href="Main_Page.html" class="linkunderline"><h2>Работы</h2></a></li>
+                <li><a href="" class="linkunderline disable"><h2>Заметки</h2></a></li>
+                <li><a href="Contact.html" class="linkunderline"><h2>Написать мне</h2></a></li>
+            </ul></td>
+        </table>
+    </header>
+
+<!-- Кнопки сюда -->
+<div id="myBtnContainer" style="margin-bottom: 20px;">
+    <button class="btn" style="border: 2px solid #e0ff00;"><div class="icon mono"><i class="material-symbols-outlined">search</i></div></button>
+    <button class="btn filter active" style="border: 2px solid #e0ff00;" onclick="filterSelection('all')"><div class="icon"><i class="material-symbols-outlined">select_all</i></div> Всё сразу</button>
+    <button class="btn filter" onclick="filterSelection('design')"><span class="material-symbols-outlined" style="color: white;">sticky_note_2</span> Дизайн</button>
+    <button class="btn filter" onclick="filterSelection('3d')"> 3д графика</button>
+    <button class="btn filter" onclick="filterSelection('logo')"> Логотипы</button>
+    <button class="btn filter" onclick="filterSelection('product')"> Продукт-дизайн</button>
+    <button class="btn filter" onclick="filterSelection('web')"> Веб</button>
+    <button class="btn filter" onclick="filterSelection('architecture')"> Архитектура</button>
+    <button class="btn filter" onclick="filterSelection('level design')"> Левел-дизайн</button>
+  </div>
+
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 300,
+      'GRAD' 0,
+      'opsz' 24
+    }
+    </style>
+
+<!-- Контент сюда -->
+<div class="contentposts" id="contentposts">
+    
+    <div class="filterDiv 3d design"><a href="Post_Page.html">
+        <h2><span class="material-symbols-outlined" style="color: white;">sticky_note_2</span>
+        Почему приложения умрут?</h2>
+        <p>08.09 2004г</p>
+        </a></div>
+    <div class="filterDiv 3d design"><a href="Post_Page.html">
+        <h2><span class="material-symbols-outlined" style="color: white;">sticky_note_2</span>
+        Главная причина несчастья человеческого</h2>
+        <p>08.09 2004г</p>
+        </a></div>
+    <div class="filterDiv 3d design"><a href="Post_Page.html">
+        <h2><span class="material-symbols-outlined" style="color: white;">sticky_note_2</span>
+        Кто дакой дизайнер?</h2>
+        <p>08.09 2004г</p>
+        </a></div>
+    <div class="filterDiv 3d design"><a href="Post_Page.html">
+        <h2><span class="material-symbols-outlined" style="color: white;">sticky_note_2</span>
+        Города заслуживающие внимания</h2>
+        <p>08.09 2004г</p>
+        </a></div>
+</div>
+
+</div>
+
+<!-- Динозаврик -->
+<iframe src="https://offline-dino-game.firebaseapp.com/" frameborder="0" scrolling="no" width="100%" height="100%" loading="lazy"></iframe>
+<style type="text/css">iframe { position: absolute; width: 500px; height: 150px; z-index: 999; }</style>
+
+
+<a href="https://www.tema.ru/main.html" style="position: absolute; right: 10px; top: 10px; color: white; opacity: 0.1;">A</a>
+<!-- контент футера -->
+<footer>
+<ul>
+    <li><p>© 2024г. Власов Даниил</p></li>
+    <li><a href="https://vk.com/vlv_daniil" class="link"><p>vk.com/vlv_daniil</p></a></li>
+</ul>
+</footer>
+
+
+<!-- Скрипты -->
+<script src="Scripts/filter_selection.js"></script>
+<script src="Scripts/back_logo_animation.js"></script>
+</body>
+</html>

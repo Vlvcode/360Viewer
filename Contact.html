@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>§ 179. Напряг и свобода</title>
+    <link rel="icon" href="Styles/Img/web_icon.png">
+
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="Styles/Main.css">
+    <link rel="stylesheet" href="Styles/Contact_me.css">
+    <link rel="stylesheet" href="Styles/Buttons.css">
+
+</head>
+<body>
+
+<!-- Фоновое лого -->
+<div class="back_logo"></div>
+
+<div class="MainCanvas">
+    <header>
+        <table cellpadding="0" cellspacing="0" width="100%">
+            <td width="50%"><h1>Связаться<br>со мной</h1></td>
+            <td width="50%" class="sections"><ul style="display: inline-flex;">
+                <li><a href="Main_Page.html" class="linkunderline"><h2>Работы</h2></a></li>
+                <li><a href="Notes_page.html" class="linkunderline"><h2>Заметки</h2></a></li>
+                <li><a href="" class="linkunderline disable"><h2>Написать мне</h2></a></li>
+            </ul></td>
+        </table>
+    </header>
+
+<!-- Кнопки сюда -->
+<div id="myBtnContainer" style="margin-bottom: 20px;">
+    
+    <a href="Main_Page.html"><button class="btn" style="border: 2px solid #e0ff00;"><div class="icon"><i class="material-symbols-outlined">Send</i></div>Отправить</button></a>
+    <div class="btn info">Можете вернуться на главную</div>
+  </div>
+
+<hr style="margin: auto; margin-bottom: 30px;  margin-top: 5px; color: white;">
+
+<!-- Контент сюда -->
+<form name="contactMe" action="" method="" id="">
+    <h2 style="margin-bottom: 10px; font-size: 25pt;">Как вас зовут?</h2>
+    <input class="btn" name="login" type="text" size="50" maxlength="32" placeholder="Иванов Иван Иванович"/>
+    <h2 style="margin-bottom: 10px; font-size: 25pt;">Ваше сообщение:</h2>
+    <textarea class="btn" style="height: fit-content;" name="txtpole" id="txtpole" cols="36" rows="15"> </textarea>
+    <h2 style="margin-bottom: 10px; font-size: 25pt;">Как с вами связаться?</h2>
+    <input class="btn" name="login" type="text" size="50" maxlength="32" placeholder="Почта, тг, номер телефона и пр."/>
+    <h2 style="margin-bottom: 10px; font-size: 25pt;">Файлы (если надо):</h2>
+    <input class="btn" type="file" name="upload_files[]" multiple>
+    </form>
+
+</div>
+
+<hr style="margin: auto; margin-bottom: 60px;  margin-top: 30px; color: white;">
+
+<footer>
+    <ul>
+        <li><p>© 2024г. Власов Даниил</p></li>
+        <li><a href="https://vk.com/vlv_daniil" style="text-decoration: underline; text-decoration-color: white;"><p>vk.com/vlv_daniil</p></a></li>
+    </ul>
+</footer>
+
+
+<!-- Скрипты -->
+<script src="Scripts/filter_selection.js"></script>
+<script src="Scripts/back_logo_animation.js"></script>
+</body>
+</html>
